@@ -12,6 +12,8 @@ class Client extends \SoapClient
 
     private $options = array();
 
+    private $logger = null;
+
     /**
      * Client constructor.
      * @param mixed $url
@@ -21,7 +23,7 @@ class Client extends \SoapClient
     public function __construct($url, $data, LoggerInterface $logger = null)
     {
         if ($logger) {
-            $this->setLogger($logger);
+            $this->logger = $logger;
         }
 
         $this->options = $data;
