@@ -1,10 +1,10 @@
 {
-    "name": "mlabrum/ntlm-soap",
+    "name": "donatasbartkus/soap-ntlm",
     "description": "Provides a NTLM Soap implementation",
     "authors": [
         {
-            "name": "Matt Labrum",
-            "email": "matt@labrum.me"
+            "name": "Donatas Bartkus",
+            "email": "donatas.bartkus@nfq.lt"
         }
     ],
     "minimum-stability": "stable",
