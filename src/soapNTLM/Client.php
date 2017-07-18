@@ -2,14 +2,10 @@
 
 namespace soapNTLM;
 
-use \Psr\Log\LoggerAwareInterface;
-use \Psr\Log\LoggerAwareTrait;
 use \Psr\Log\LoggerInterface;
 
 class Client extends \SoapClient
 {
-    use LoggerAwareTrait;
-
     private $options = array();
 
     private $logger = null;
