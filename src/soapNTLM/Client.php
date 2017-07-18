@@ -1,6 +1,6 @@
 <?php
 
-namespace NTLMSoap;
+namespace soapNTLM;
 
 use \Psr\Log\LoggerAwareInterface;
 use \Psr\Log\LoggerAwareTrait;
@@ -33,7 +33,7 @@ class Client extends \SoapClient{
 			HttpStream\NTLM::$password = $data['ntlm_password'];
 			
 			stream_wrapper_unregister('http');
-			if(!stream_wrapper_register('http', '\\NTLMSoap\\HttpStream\\NTLM')){
+			if(!stream_wrapper_register('http', '\\soapNTLM\\HttpStream\\NTLM')){
 				throw new Exception("Unable to register HTTP Handler");
 			}
 			
