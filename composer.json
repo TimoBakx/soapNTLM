@@ -1,15 +1,19 @@
 {
-    "name": "donatasbartkus/soap-ntlm",
+    "name": "timobakx/soap-ntlm",
     "description": "Provides a NTLM Soap implementation",
     "authors": [
         {
             "name": "Donatas Bartkus",
             "email": "donatas.bartkus@nfq.lt"
+        },
+        {
+            "name": "Timo Bakx",
+            "email": "timobakx@gmail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-	"psr/log": "1.0.0"
+	"psr/log": "^1.0"
     },
      "autoload": {
         "psr-0": {"soapNTLM": "src/"}
